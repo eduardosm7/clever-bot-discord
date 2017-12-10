@@ -26,6 +26,6 @@ async def on_message(message):
 	if len(param) > 0:
             await client.send_message(message.channel, cw.say(param))
         else:
-            await client.send_message(message.channel, 'Use !clever <message>
+            await client.send_message(message.channel, 'Use !clever <message>')
 
 client.run('token')
