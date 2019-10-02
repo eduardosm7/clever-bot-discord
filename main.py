@@ -7,7 +7,7 @@ client = discord.Client()
 
 
 @client.event
-async def on_ready():
+async def on_ready() -> None:
     print('Logged in as')
     print(client.user.name)
     print(client.user.id)
@@ -15,7 +15,7 @@ async def on_ready():
 
 
 @client.event
-async def on_message(message):
+async def on_message(message: str) -> None:
     
     if message.content.startswith('!clever_reset'):
         cw.reset()
